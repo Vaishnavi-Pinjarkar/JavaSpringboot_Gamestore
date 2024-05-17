@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+      <h1 align="center"> Add Product</h1>
+      
+
+           
+           <table align="center" border="1">
+           
+                      <form method="post"  th:action="@{/products/add}" th:object = "${product}">
+                      
+                    <tr>
+                      <th>Product Name</th>
+                      <td><input type="text" th:field="*{productName}"></td>
+                    </tr>
+              
+                    <tr>
+                      <th>Description</th>
+                      <td><input type="text" th:field="*{description}"></td>
+                    </tr>
+              
+                    <tr>
+                      <th>Manufacture</th>
+                      <td><input type="text" th:field="*{manufacture}"></td>
+                    </tr>
+              
+                    <tr>
+                      <th>Price</th>
+                      <td><input type="text" th:field="*{price}"></td>
+                    </tr>
+              
+                    <tr>
+                      <th>Category</th>
+                      <td><input type="text" th:field="*{category}"></td>
+                    </tr>
+                    
+                    <tr>
+                    <td><input type="submit" value="submit"></td>
+                    </tr>
+                      
+                      </form>
+              
+              
+           </table>
+      
+</body>
+</html>

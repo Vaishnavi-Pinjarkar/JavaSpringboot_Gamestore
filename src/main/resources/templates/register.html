@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+       <h1 align="center" border="1">Register Form</h1>
+       <table align="center" border="1">
+       
+       <form method="post" th:action="@{/users/reg}" th:object = "${user}">
+        
+            <tr>
+                 <th>First Name</th>
+                 <td><input type="text" th:field="*{first_name}"></td>
+             </tr>
+             
+             <tr>
+                 <th>Last Name</th>
+                 <td><input type="text" th:field="*{last_name}"></td>
+             </tr>
+             
+             <tr>
+                 <th>Email</th>
+                 <td><input type="text" th:field="*{Email}"></td>
+             </tr>
+             
+             <tr>
+                 <th>Password</th>
+                 <td><input type="text" th:field="*{Password}"></td>
+             </tr>
+             <tr>
+                 <th>Roles</th>
+                 <td><input type="text" th:field="*{roles}"></td>
+             </tr>
+             
+             <tr>
+                 <th>Address</th>
+                 <td><input type="text" th:field="*{Address}"></td>
+             </tr>
+             <tr>
+                  <td><input type="submit" value="submit"></td>
+             </tr>
+       
+       </form>   
+    </table>
+
+</body>
+</html>
